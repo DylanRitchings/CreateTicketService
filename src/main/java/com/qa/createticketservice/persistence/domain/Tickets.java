@@ -22,13 +22,6 @@ public class Tickets {
 	@Column(name = "name")
 	private String name;
 	
-//	@Column(name = "email", unique = true)
-//	private String email;
-	
-//	@Basic
-//	@Temporal(TemporalType.DATE)
-//	private java.util.Date creationDate;
-	
 	@CreatedDate
     @Column(name = "created_at", updatable = false)
     private LocalDateTime createdAt;
